@@ -1,0 +1,136 @@
+/* If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ */
+#th{
+	text-align: center;
+	font-size: 50px;
+	font-family: impact;
+	margin-bottom: 5px;
+	color: LightGray;
+	outline-color: Silver;
+	outline-width: Thick;
+}
+#h1{
+	color: Silver;
+	text-shadow: 1.5px 1.5px Black;
+	font-size: 24px;
+	margin-left:5px;
+}
+#h2{
+	color:Silver;
+	font-size: 18px;
+}
+#t{ /* Titles */
+	color:Black;
+	text-shadow:1px 1px Grey;
+	margin:5px;
+	font-size: 18px;
+}
+#t1{ /* Text 1 */
+	color:Black;
+	margin: 5px;
+	font-size: 13px;
+	background-color:#a1a1a1;
+}
+#t1 a {/* Text 1 Hyperlink */
+	color:White;
+	text-decoration:none;
+}
+#t1 a:hover {/* Text 1 Hovering Hyperlink */
+	color:#955;
+	text-decoration:none;
+}
+#t2{/* Text 2 */
+	color:White;
+	margin-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 18px;
+	font-size: 13px;
+}
+#t3{/* Text 3 */
+	color:Silver;
+	font-size: 13px;
+	margin-left: 3%;
+}
+.caption {
+	background-color:LightGrey;
+	color:#555;
+	text-indent:10px;
+	font-size:14px;
+	padding:4px;
+	width:90%;
+	
+	
+}
+hr {
+	margin-bottom: 11px;
+	color: Grey;
+	background-color: Grey;
+}
+body{
+	 background-image: url("../gallery/bg.jpg");
+}
+.gallery {
+	padding:0.5%;
+	background-color:#777;
+	width:99%;
+	height:99%;
+}
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: -44px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0px 6px 6px 6px;
+    bottom: -10px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+.tooltipr{
+    display: inline;
+    position: relative;
+}
+
+.tooltipr:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: -68px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width:180px;
+}
+
+.tooltipr:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0px 6px 6px 6px;
+    bottom: -10px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

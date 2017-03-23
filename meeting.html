@@ -1,0 +1,209 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<link rel="stylesheet" href="css/gallery.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>var page = "Meetings";</script>
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+<script src="gallery.js"></script>
+</head>
+<body>
+<script>modal()</script>
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+<li class="btn" onClick="location.href='gallery.html';"><a>Back</a></li>
+<p class="h1">Meeting</p>
+<p class="p">
+No meeting photos are available.
+</p><br />
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+<li class="btn" onClick="location.href='gallery.html';"><a>Back</a></li>
+
+<p class="title">
+Meeting 01/14/17
+</p><br />
+<script>
+var captions = [
+"Everyone dispersing into their teams.",
+"Getting into the Kit of Parts.",
+"When you're excited to get into the KOP.",
+"Engineering and Programming meeting.",
+"Prototyping our fuel box.",
+"Prototyping the gear mechanism",
+]
+var width = document.body.clientWidth;
+var max = 5
+var ext = ".jpg"
+gallery("frc/meeting/1_14_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 01/19/17
+</p><br />
+<script>
+var captions = ["More cardboard prototyping."]
+var width = document.body.clientWidth;
+var max = 0
+var ext = ".jpg"
+gallery("frc/meeting/1_19_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 01/21/17
+</p><br />
+<script>
+var captions = [
+"Assembling wheel hubs for the frame.",
+"Marking where to cut the frame.",
+"Assembling the frame.",
+]
+var width = document.body.clientWidth;
+var max = 2
+var ext = ".jpg"
+gallery("frc/meeting/1_21_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 01/28/17
+</p><br />
+<script>
+var captions = [
+"Clothing ideas for girls.",
+"Clothing ideas for boys.",
+"Jacob and Caroline assembling part of the wheel assembly.",
+"To-Do list.",
+"Ben doing some testing on Flagbot.",
+"Jacob, Fidel, Caroline, Charles, and Mr. Greco working on the frame.",
+"Michael and Charles working on one wheel assembly.",
+"Fidel, Mr. Bishop, Caroline, Jacob, Michael, and Charles around the frame.",
+"Frame so far.",
+"Electronics being moved to a smaller board.",
+"Flagbot with her electronics ripped out.",
+"Frame progress.",
+"More frame progress.",
+"Putting the electronics back in Flagbot for a STEM expo at Achievable Dream Elementary School.",
+"Completed frame.",
+]
+var width = document.body.clientWidth;
+var max = 14
+var ext = ".jpg"
+gallery("frc/meeting/1_28_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 01/31/17
+</p><br />
+<script>
+var captions = [
+"Working on reversible bumpers.",
+"Ben.",
+"Installing LEDs on Okeechobee.",
+]
+var width = document.body.clientWidth;
+var max = 2
+var ext = ".jpg"
+gallery("frc/meeting/1_31_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 02/2/17
+</p><br />
+<script>
+var captions = [
+"Working on electronics.",
+]
+var width = document.body.clientWidth;
+var max = 0
+var ext = ".jpg"
+gallery("frc/meeting/2_2_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 02/4/17
+</p><br />
+<script>
+var captions = [
+"Cardboard boiler.",
+"Gear and Fuel dropoff.",
+"Ashlee.",
+]
+var width = document.body.clientWidth;
+var max = 2
+var ext = ".jpg"
+gallery("frc/meeting/2_4_17",width,max,ext,captions)
+</script>
+
+<p class="title">
+Meeting 02/7/17
+</p><br />
+<script>
+var captions = [
+"To-do list."
+]
+var width = document.body.clientWidth;
+var max = 0
+var ext = ".jpg"
+gallery("frc/meeting/2_7_17",width,max,ext,captions)
+</script>
+
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer">Page last updated on: <!-- #BeginDate format:fcAm1a -->Tuesday, January 31, 2017 9:49 AM<!-- #EndDate --> <br /><script>foot()</script></div>
+</div>
+</footer>
+</html>

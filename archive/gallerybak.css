@@ -1,0 +1,72 @@
+/*
+Set image style for gallery
+These styles aren't used on any placed elements, only generated ones. Don't use these for anything else.
+*/
+.on.img{
+	width:97%;
+	border-style:solid;
+	border-color:#000;
+	border-width:0.5em;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition: 0.5s;
+	z-index:100;
+}
+.on.img:hover{
+	border-style:solid;
+	border-color:#fff;
+	border-width:0.5em;
+	transition: 0.5s;
+}
+.off.img:hover{
+	border-style:solid;
+	border-color:#fff;
+	border-width:0.5em;
+	transition: 0.5s;
+}
+.off.img{
+    width:30%;
+	border-style:solid;
+	border-color:#ccc;
+	border-width:0.5em;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition: 0.5s;
+	z-index:10;
+}
+section img {
+	z-index:50;
+	position:static;
+}
+section {border-color:#ccc;}
+section:hover {
+	border-color:#fff;
+}
+.on.cap {
+	position:absolute;
+	float:top;
+	left:0;
+	top:0;
+	z-index:100;
+	padding:2%;
+	transition: 0.5s;
+	display:block;
+	color:rgba(255,255,255,1);
+	background-color:rgba(100,100,100,0.7);
+	font-size:16px;
+}
+.off.cap {
+	position:absolute;
+	float:top;
+	left:0;
+	top:0;
+	z-index:100;
+	padding:2%;
+	transition: 0.5s;
+	display:block;
+	color:rgba(255,255,255,0);
+	background-color:rgba(100,100,100,0);
+	font-size:14px;
+}

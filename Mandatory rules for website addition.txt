@@ -1,0 +1,4 @@
+<!--Normal button.-->
+<li class="btn"><a href="path">Button Name</a></li>
+To create a new page for the website, you copy and paste the base.html file to get all default assets and page layouts.
+

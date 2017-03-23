@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* clear the link below to the html5shiv
+* done the "no-js" class to the html tags at the top
+* you can also clear the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+
+<p id="t1" style="text-indent:30px;">
+Body paragraph 1
+</p><br />
+
+<p id="t1" style="text-indent:30px;">
+Body paragraph 2
+</p><br />
+
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+
+<p id="th" style="text-indent:30px;">
+Scouting Information:
+</p><br />
+
+<p id="t1" style="margin-left:5%;text-indent:30px;" >
+<b>Breachable Defenses:</b><br>
+<br />
+Autonomous Capable:<br>
+<i class="material-icons md-light">done</i> Low Bar <br>
+<i class="material-icons md-light">done</i> Rough Terrain <br>
+<i class="material-icons md-light">done</i> Porticullis <br>
+<br />
+
+Tele-Op Single Capable:<br>
+<i class="material-icons md-light">done</i> Low Bar <br>
+<i class="material-icons md-light">done</i> Portcullis <br>
+<i class="material-icons md-light">done</i> Rough Terrain <br>
+<br />
+Tele-Op Single Incapable: <br>
+<i class="material-icons md-light">clear</i> Sally Door <br>
+<i class="material-icons md-light">clear</i> Drawbridge <br>
+<i class="material-icons md-light">clear</i> Moat <br>
+<i class="material-icons md-light">clear</i> Rock Wall (Not safe in Auto)<br>
+<br />
+
+<b>Other Scoring:</b><br>
+<i class="material-icons md-light">done</i> Challenge <br>
+<br />
+<b>Cannot:</b><br>
+<i class="material-icons md-light">clear</i> Score High Goal <br>
+<i class="material-icons md-light">clear</i> Score Low Goal <br>
+<i class="material-icons md-light">clear</i> Hang <br>
+<br />
+<b>Other Notes/Information:</b><br>
+<i class="material-icons md-light">done</i> Very light robot at 65 Lbs, and is a drive base with a flag to block shots to the High Goal or to disrupt vision. <br>
+<i class="material-icons md-light">done</i> Rocker bot. Two 6-inch wheels at the front, and four 8-inch wheels at the middle and back.<br>
+<i class="material-icons md-light">done</i> Very good offensive bot. <br>
+<i class="material-icons md-light">done</i> Max speed is 25 floor tiles per second. <br>
+
+
+
+
+</p><br />
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	var page = "Scouting Information";
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer">Page last updated on: <!-- #BeginDate format:fcAm1a -->Monday, May 23, 2016 12:13 PM<!-- #EndDate --> <br />&copy; 2015-2016 Aaron Greco</div>
+</div>
+</footer>
+</html>
