@@ -2,146 +2,146 @@
 Otherwise, you should be here: http://cat5cybercanes.org/ */
 /*Main header*/
 .h1{
-	text-align: center;
-	font-size: 50px;
-	margin: 4%;
-	color: LightGray;
+  text-align: center;
+  font-size: 50px;
+  margin: 4%;
+  color: LightGray;
 }
 .h2{
-	color:Black;
-	margin-left:-2.5em;
-	font-size:18px;
+  color:Black;
+  margin-left:-2.5em;
+  font-size:18px;
 }
 .h3{
-	color:Black;
-	font-size:15px;
+  color:Black;
+  font-size:15px;
 }
 .p{ /* Text 1 */
-	color:Black;
-	font-size: 13px;
-	text-indent:4%;
-	margin:1% 2%;
+  color:Black;
+  font-size: 13px;
+  text-indent:4%;
+  margin:1% 2%;
 }
 .t1{ /* Text 1 */
-	color:Black;
-	font-size: 13px;
-	margin:1%;
+  color:Black;
+  font-size: 13px;
+  margin:1%;
 }
 .t1 a {/* Text 1 Hyperlink */
-	color:White;
-	text-decoration:none;
+  color:White;
+  text-decoration:none;
 }
 .t1 a:hover {/* Text 1 Hovering Hyperlink */
-	color:#955;
-	text-decoration:none;
+  color:#955;
+  text-decoration:none;
 }
 .t2{/* Text 2 */
-	color:White;
-	margin: 1%;
-	font-size: 13px;
+  color:White;
+  margin: 1%;
+  font-size: 13px;
 }
 
 #pdfdisplay {
-	width:98%;
-	height:100em;
-	margin:1%;
-	float:top;
+  width:98%;
+  height:100em;
+  margin:1%;
+  float:top;
 }
 body{
-	 background-image: url("../gallery/bg.jpg");
+   background-image: url("../gallery/bg.jpg");
 }
 /*1 line for tooltip*/
 .tooltip1{
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .tooltip1:hover:after{
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: -30px;
-    color: #fff;
-    content: attr(data-title);
-    left: 20%;
-    padding: 5px 15px;
-    position: absolute;
-    z-index: 98;
-    width: 220px;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: -30px;
+  color: #fff;
+  content: attr(data-title);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 220px;
 }
 
 .tooltip1:hover:before{
-    border: solid;
-    border-color: rgba(0,0,0,.8) transparent;
-    border-width: 0px 6px 6px 6px;
-    bottom: -4px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
+  border: solid;
+  border-color: rgba(0,0,0,.8) transparent;
+  border-width: 0px 6px 6px 6px;
+  bottom: -4px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
 }
 /*2 lines for tooltip*/
 .tooltip2{
-    display: inline;
-    position: relative;
-	transition:0.5s;
-	border-color: rgba(0,0,0,0) transparent;
+  display: inline;
+  position: relative;
+  transition:0.5s;
+  border-color: rgba(0,0,0,0) transparent;
 }
 
 .tooltip2:hover:after{
-    background: #333;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: -58px;
-    color: #fff;
-    content: attr(data-title);
-    left: 20%;
-    padding: 5px 15px;
-	font-size:16px;
-    position: absolute;
-    z-index: 98;
-    width:180px;
-	
+  background: #333;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: -58px;
+  color: #fff;
+  content: attr(data-title);
+  left: 20%;
+  padding: 5px 15px;
+  font-size:16px;
+  position: absolute;
+  z-index: 98;
+  width:180px;
+  
 }
 
 .tooltip2:hover:before{
-    border: solid;
-    border-color: rgba(0,0,0,.8) transparent;
-    border-width: 0px 6px 6px 6px;
-    bottom: -10px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
-	transition:0.5s;
+  border: solid;
+  border-color: rgba(0,0,0,.8) transparent;
+  border-width: 0px 6px 6px 6px;
+  bottom: -10px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+  transition:0.5s;
 }
 /*3 lines for tooltip*/
 .tooltip3{
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .tooltip3:hover:after{
-    background: #333;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: -77px;
-    color: #fff;
-    content: attr(data-title);
-    left: 20%;
-    padding: 5px 15px;
-	font-size:16px;
-    position: absolute;
-    z-index: 98;
-    width:180px;
+  background: #333;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: -77px;
+  color: #fff;
+  content: attr(data-title);
+  left: 20%;
+  padding: 5px 15px;
+  font-size:16px;
+  position: absolute;
+  z-index: 98;
+  width:180px;
 }
 
 .tooltip3:hover:before{
-    border: solid;
-    border-color: rgba(0,0,0,.8) transparent;
-    border-width: 0px 6px 6px 6px;
-    bottom: -10px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
+  border: solid;
+  border-color: rgba(0,0,0,.8) transparent;
+  border-width: 0px 6px 6px 6px;
+  bottom: -10px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
 }
