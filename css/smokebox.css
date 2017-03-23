@@ -1,29 +1,29 @@
 /*Buttons for FTC/FTC, in the top left of the page.
 Makes the boxes around the text.*/
 li.on, li.off {
-	list-style:none;
-	display:inline-block;
-	padding: 1% 2%;
-	text-decoration:none;
-	text-shadow: 2px 2px 5px #636363;
+  list-style:none;
+  display:inline-block;
+  padding: 1% 2%;
+  text-decoration:none;
+  text-shadow: 2px 2px 5px #636363;
 }
 /*Makes text look nice*/
 li.off a {
-	text-decoration:none;
-	color: #fff;
-	cursor:default;
+  text-decoration:none;
+  color: #fff;
+  cursor:default;
 }
 li.on a {
-	text-decoration:none;
-	color: #fff;
-	cursor:pointer;
+  text-decoration:none;
+  color: #fff;
+  cursor:pointer;
 }
 /*Makes sure the link, if visited, doesn't change.*/
 li.on a:visited, li.off a:visited {
-	text-decoration:none;
-	color: #fff;
-	text-shadow: 2px 2px 5px #636363;
-	font-size: 20px;
+  text-decoration:none;
+  color: #fff;
+  text-shadow: 2px 2px 5px #636363;
+  font-size: 20px;
 }
 /*Stuff for button on*/
 li.on {
@@ -36,7 +36,6 @@ li.on {
   border: solid #704757 0px;
   text-decoration: none;
   transition: 0.5s;
-  
 }
 /*Makes it look different when you hover over it*/
 li.on:hover {
@@ -67,27 +66,27 @@ li.btn {
   padding:1% 2%;
   text-decoration: none;
   border: solid #704757 0px;
-	list-style:none;
-	display:inline-block;
-	text-decoration:none;
-	text-shadow: 2px 2px 5px #636363;
-	transition: 0.5s;
-	cursor:pointer;
+  list-style:none;
+  display:inline-block;
+  text-decoration:none;
+  text-shadow: 2px 2px 5px #636363;
+  transition: 0.5s;
+  cursor:pointer;
 }
 li.btn a {
-	text-decoration:none;
-	color: #ffffff;
+  text-decoration:none;
+  color: #ffffff;
 }
 li.btn a:visited {
-	text-decoration:none;
-	color: #ffffff;
-	text-shadow: 2px 2px 5px #636363;
-	font-size: 20px;
+  text-decoration:none;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #636363;
+  font-size: 20px;
 }
 li.btn:hover {
-	background: #5e5e5e;
-	text-decoration: none;
-	transition: 0.5s;
+  background: #5e5e5e;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 /* Disabled button */
@@ -100,24 +99,24 @@ li.btnd {
   padding:1% 2%;
   text-decoration: none;
   border: solid #704757 0px;
-	list-style:none;
-	display:inline-block;
-	text-decoration:none;
-	text-shadow: 2px 2px 5px #636363;
-	transition: 0.5s;
+  list-style:none;
+  display:inline-block;
+  text-decoration:none;
+  text-shadow: 2px 2px 5px #636363;
+  transition: 0.5s;
 }
 li.btnd a {
-	text-decoration:none;
-	color: #ffffff;
+  text-decoration:none;
+  color: #ffffff;
 
-	
+  
 }
-	
+  
 li.btnd a:visited {
-	text-decoration:none;
-	color: #ffffff;
-	text-shadow: 2px 2px 5px #636363;
-	font-size: 20px;
+  text-decoration:none;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #636363;
+  font-size: 20px;
 }
 
 
