@@ -24,7 +24,7 @@ nav ul {
 	background: #8f8f8f;
 	transition: 0.5s;
 	position:relative;
-	width:80%;
+	width:87.75%;
 }
 nav ul:after {
 	content: "";
@@ -36,13 +36,28 @@ nav ul:after {
 	nav ul li {
 	float: left;
 	transition: 0.5s;
-	padding:2% 4.41%;
+	padding:1% 4.41%;
+	border-style:solid;
+	border-color:#8f8f8f;
+	border-width:0.25%;
 }
 nav ul li:hover {
 	background-color:#5e5e5e;
 	transition: 0.5s;
 	position:relative;
 	cursor:pointer;
+	border-style:ridge;
+	border-color:#6B6B6B;
+	border-width:0.25%;
+}
+nav ul li:active {
+	background-color:#494949;
+	transition: 0.5s;
+	position:relative;
+	cursor:pointer;
+	border-style:ridge;
+	border-color:#646464;
+	border-width:0.25%;
 }
 
 nav ul li a {
