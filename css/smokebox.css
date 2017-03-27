@@ -104,10 +104,12 @@ li.btnd {
   text-decoration:none;
   text-shadow: 2px 2px 5px #636363;
   transition: 0.5s;
+  cursor:default;
 }
 li.btnd a {
   text-decoration:none;
   color: #ffffff;
+  cursor:default;
 
   
 }
@@ -117,6 +119,7 @@ li.btnd a:visited {
   color: #ffffff;
   text-shadow: 2px 2px 5px #636363;
   font-size: 20px;
+  cursor:default;
 }
 
 

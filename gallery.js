@@ -46,21 +46,21 @@ function gallery(dir, width, max, ext, cap) {
 }
 
 function openModal(path, caption) {
-	var fpath = path.replace("/min","")
+    var fpath = path.replace("/min","")
     var elem = document.getElementById("modal");
     elem.style.display = "block";
     var img = document.getElementById("image");
     document.getElementById("image").src = fpath;
     document.getElementById("image").alt = caption;
     document.getElementById("modal-caption").innerHTML = caption;
-	var body = document.getElementsByClassName("team");
-	body.style[1] = "height:100%; overflow:auto; scroll:no;"
+    var body = document.getElementsByClassName("team");
+    body.style[1] = "height:100%; overflow:auto; scroll:no;"
 }
 function closeModal() {
     var elem = document.getElementById("modal");
     elem.style.display = "none";
-	var body = document.body;
-	body.style = "overflow:auto;"
+    var body = document.body;
+    body.style = "overflow:auto;"
 }
 
 //Please know enough to not have to have this function explained.
