@@ -24,17 +24,20 @@ for (i=0; i<comp2.length; i++){
 comp2[i].innerHTML = "CHS District - Central Virginia Event 2017";
 }
 for (i=0; i<comp2T.length; i++){
+comp2T[i].dataset.title = 'CHS District - Central Virginia Event 2017';
 }
 
 for (i=0; i<regional.length; i++){
 regional[i].innerHTML = "FIRST Chesapeake District Championship 2017";
 }
 for (i=0; i<regionalT.length; i++){
+regionalT[i].dataset.title = 'FIRST Chesapeake District Championship 2017';
 }
 
 for (i=0; i<world.length; i++){
 world[i].innerHTML = "FIRST Championship";
 }
 for (i=0; i<worldT.length; i++){
+worldT[i].dataset.title = 'FIRST Championship';
 }
 }
