@@ -10,7 +10,7 @@ function modal() {
     document.write('</section>');
 }
 
-function gallery(dir, width, max, ext, cap) {
+function gallery(dir, max, ext, cap) {
 
     document.write('<gallery>');
     //Declare path and file variables. Path stores the file path, and File stores the path and the file name and extension.
@@ -18,14 +18,7 @@ function gallery(dir, width, max, ext, cap) {
     var file;
     var capt;
     var state = 0;
-    //If page is tablet width or lower, use the minimized directory.
-    if (width <= 768) {
-        path = "gallery/" + dir + "/min/";
-    }
-    //Else, use the root page directory.
-    else {
-        path = "gallery/" + dir + "/";
-    }
+    path = "gallery/" + dir + "/min/";
     //Declare and set index to 0.
     var i = 0;
     //for loop from 0 to total number of files in the folder, adding 1 to index each time it's run.
@@ -75,7 +68,7 @@ What to put into HTML
 var captions = [
 "",
 ]
-var width = document.body.clientWidth;
+
 var max = 0
 var ext = ".jpg" //The image format that is in the specified folder.
 gallery("ftc/comp1",width,max,ext,captions,pi)
