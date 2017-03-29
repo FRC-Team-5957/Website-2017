@@ -1,5 +1,6 @@
 function nav(){document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>--><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');}
 function foot(){document.write('&copy; 2015-2017 Aaron Greco');}
+
 window.onload = function(){
 var comp1 = document.getElementsByClassName("comp1");
 var comp1T = document.getElementsByClassName("comp1T");
@@ -12,6 +13,10 @@ var regionalT = document.getElementsByClassName("regionalT");
 
 var world = document.getElementsByClassName("world");
 var worldT = document.getElementsByClassName("worldT");
+
+var tbal = document.getElementsByClassName("tbal");
+
+
 
 for (i=0; i<comp1.length; i++){
 comp1[i].innerHTML = "CHS District - Hampton Roads Event 2017";
@@ -39,5 +44,9 @@ world[i].innerHTML = "FIRST Championship";
 }
 for (i=0; i<worldT.length; i++){
 worldT[i].dataset.title = 'FIRST Championship';
+}
+
+for (i=0; i<tbal.length; i++){
+tbal[i].dataset.title = 'Link to event on The Blue Alliance.';
 }
 }
