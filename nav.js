@@ -1,5 +1,12 @@
-function nav(){document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>--><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');}
-function foot(){document.write('&copy; 2015-2017 Aaron Greco');}
+function nav() {
+    document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
+}
+/*
+<!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>-->
+*/
+function foot() {
+    document.write('&copy; 2015-2017 Aaron Greco');
+}
 
 window.onload = function(){
 var comp1 = document.getElementsByClassName("comp1");
