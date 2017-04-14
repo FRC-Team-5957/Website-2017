@@ -1,9 +1,46 @@
 function nav() {
-    document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
+    document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a><ul><li id="id1" onClick="window.open(\'index.html#\',\'_self\'); doSomething(window.event);"><a>Contact Us</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
 }
 /*
 <!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>-->
+<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Contact Us</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>
+document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
+
+
+<nav>
+	<ul>
+		<li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li>
+		
+		<li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a></li>
+			<ul>
+				<li onClick="window.open(\'index.html\',\'_self\');"><a>Contact Us</a></li>
+				<li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li>
+			</ul>
+		
+		
+		<li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li>
+		<li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li>
+		<li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li>
+	</ul>
+</nav>
+
 */
+document.getElementById('id1').addEventListner('click',function (e){
+   e.stopPropagation();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 function foot() {
     document.write('&copy; 2015-2017 Aaron Greco');
 }

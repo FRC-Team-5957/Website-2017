@@ -35,6 +35,7 @@ nav ul:after {
 }
   nav ul li {
   float: left;
+  display: inline-block;
   transition: 0.5s;
   padding:1% 4.41%;
 
@@ -70,42 +71,45 @@ nav ul li a:hover {
   text-align:center;
 }
 
-nav ul li ul {
+nav ul  ul {
   list-style: none;
   text-decoration: none;
   display: none;
   background-color: rgba(0,0,0,0);
-  left:0;
   top:100%;
+  left:0;
   position:absolute;
+  width:100%;
   z-index:0;
+  padding:0 10%;
   transition: 0.5s;
 }
 
-nav ul li:hover ul {
+nav ul:hover ul {
   display:block;
-  left:0;
-  top:100%;
   z-index:100;
+  background-color:#ae5e5e;
   transition: 0.5s;
 }
 
-nav ul li ul li {
-  display: block;
+nav ul  ul li {
+  display: inline-block;
   float: top; 
-  padding:8% 4.41%;
+  left:0;
   position: relative;
-    background-color:#5e5e5e;
+  padding:5% 10%;
+  background-color:#ae5e5e;
   transition: 0.5s;
 }
-nav ul li ul li:hover {
+nav ul  ul li:hover {
   background: #757575;
   transition: 0.5s;
 
 }
 
-nav ul li ul li a {
+nav ul  ul li a {
   color: #fff;
+  display:block;
   transition-delay: 0.5s;
   position:relative;
 }
