@@ -1,5 +1,5 @@
 function nav() {
-    document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a><ul><li id="id1" onClick="window.open(\'index.html#\',\'_self\'); doSomething(window.event);"><a>Contact Us</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
+    document.write('<nav><ul><li><a onClick="window.open(\'index.html\',\'_self\');">Home</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="index.html#">Contact Us</a></li><li><a href="members.html">Members</a></li></ul></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li></ul></nav>');
 }
 /*
 <!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>-->
@@ -23,11 +23,9 @@ document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a
 		<li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li>
 	</ul>
 </nav>
+    document.write('<nav><ul><li><a onClick="window.open(\'index.html\',\'_self\');">Home</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="index.html#">Contact Us</a></li><li><a href="members.html">Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
 
 */
-document.getElementById('id1').addEventListner('click',function (e){
-   e.stopPropagation();
-});
 
 
 
@@ -41,8 +39,9 @@ document.getElementById('id1').addEventListner('click',function (e){
 
 
 
-function foot() {
-    document.write('&copy; 2015-2017 Aaron Greco');
+function foot(date) {
+  var footer = document.getElementById('Footer');
+  footer.innerHTML = "Page last updated on: " + date + "<br> &copy; 2015-2017 Aaron Greco";
 }
 
 window.onload = function(){

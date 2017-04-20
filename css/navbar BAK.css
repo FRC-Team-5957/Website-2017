@@ -9,7 +9,13 @@ nav {
   position:relative;
   transition: 0.5s;
 }
+nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  position:relative;
+  transition: 0.5s;
 
+}
 nav ul {
   list-style: none;
   position: relative;
@@ -27,93 +33,83 @@ nav ul:after {
   transition: 0.5s;
   position:relative;
 }
-
-
-
-  nav ul li a{
-  text-decoration: none;
-  color: #fff;
+  nav ul li {
   float: left;
   display: inline-block;
   transition: 0.5s;
   padding:1% 4.41%;
+
 }
-nav ul li a:hover {
-  text-decoration: none;
-  display: block;
-  color: #fff;
+nav ul li:hover {
   background-color:#5e5e5e;
-  transition:0.5s;
-  text-align:center;
+  transition: 0.5s;
+  position:relative;
   cursor:pointer;
 }
-nav ul li a:active {
-  text-decoration: none;
-  color: #fff;
+
+nav ul li:active {
   background-color:#494949;
   transition: 0.5s;
   position:relative;
   cursor:pointer;
-}
-nav ul li a:visited {
-  text-decoration: none;
-  color: #fff;
-  position:relative;
-  transition: 0.5s;
+
 }
 
-
-nav ul li {
-  text-decoration: none;
+nav ul li a {
   display: block;
+  color: #fff;
+  transition:0.5s;
+  text-decoration:none;
+  text-align:center;
+  cursor:pointer;
+}
+nav ul li a:hover {
+  display: block;
+  color: #fff;
+  transition:0.5s;
+  text-decoration:none;
+  text-align:center;
 }
 
-
-nav ul li ul {
+nav ul  ul {
   list-style: none;
   text-decoration: none;
   display: none;
   background-color: rgba(0,0,0,0);
   top:100%;
+  left:0;
   position:absolute;
+  width:100%;
   z-index:0;
+  padding:0 10%;
   transition: 0.5s;
 }
 
-nav ul li:hover ul {
+nav ul:hover ul {
   display:block;
   z-index:100;
   background-color:#ae5e5e;
   transition: 0.5s;
 }
 
-nav ul li ul li a{
-  display: block; 
+nav ul  ul li {
+  display: inline-block;
+  float: top; 
+  left:0;
   position: relative;
-  padding: 2% 2%;
+  padding:5% 10%;
   background-color:#ae5e5e;
   transition: 0.5s;
-  text-decoration: none;
+}
+nav ul  ul li:hover {
+  background: #757575;
+  transition: 0.5s;
+
 }
 
-nav ul li ul li a:hover {
-  text-decoration: none;
-  display: block;
+nav ul  ul li a {
   color: #fff;
-  background-color:#5e5e5e;
-  transition:0.5s;
-  text-align:center;
-  cursor:pointer;
-}
-nav ul li ul li a:active {
-  text-decoration: none;
-  color: #fff;
-  background-color:#494949;
-  transition: 0.5s;
-  cursor:pointer;
-}
-nav ul li ul li a:visited {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.5s;
+  display:block;
+  transition-delay: 0.5s;
+  position:relative;
 }
