@@ -62,12 +62,10 @@ nav ul li a:visited {
   transition: 0.5s;
 }
 
-
 nav ul li {
   text-decoration: none;
   display: block;
 }
-
 
 nav ul li ul {
   list-style: none;
@@ -76,6 +74,7 @@ nav ul li ul {
   background-color: rgba(0,0,0,0);
   top:100%;
   left:0;
+  width:100%;
   position:absolute;
   z-index:0;
   transition: 0.5s;
