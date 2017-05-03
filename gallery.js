@@ -1,7 +1,7 @@
 "use strict";
 //gallery(Directory, width of page, total number of pictures in directory index from 0, extension as .jpg or .png)
 function modal() {
-    document.write('<section id="modal">');
+    document.write('<section id="modal" onclick="closeModal()">');
     document.write('<section id="modal-container">');
     document.write('<img src=""alt="" id="image">');
     document.write('<a id="modal-close" onclick="closeModal()">&times</a>');

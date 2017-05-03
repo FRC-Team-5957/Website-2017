@@ -134,6 +134,14 @@ nav {
 	padding-right: 1.1625%;
 	transition: 0.5s;
 }
+nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+}
 #Banner {
 	clear: both;
 	float: left;

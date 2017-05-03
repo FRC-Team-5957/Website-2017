@@ -75,18 +75,26 @@ nav ul li ul {
   display: none;
   background-color: rgba(0,0,0,0);
   top:100%;
+  left:0;
   position:absolute;
   z-index:0;
   transition: 0.5s;
 }
 
 nav ul li:hover ul {
+  position:absolute;
   display:block;
   z-index:100;
   background-color:#ae5e5e;
   transition: 0.5s;
 }
 
+
+nav ul li ul li {
+  display:block;
+  float:top;
+  position:relative;
+}
 nav ul li ul li a{
   display: block; 
   position: relative;
@@ -95,7 +103,6 @@ nav ul li ul li a{
   transition: 0.5s;
   text-decoration: none;
 }
-
 nav ul li ul li a:hover {
   text-decoration: none;
   display: block;
