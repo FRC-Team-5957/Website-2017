@@ -2,42 +2,7 @@ function nav() {
     document.write('<nav><ul><li><a href="index.html">Home</a></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li ><a href="sponsors.html">Sponsors</a></li><li ><a href="first.html">FIRST</a></li><li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="awards.html">Awards</a></li><li><a href="contactus.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="members.html">Members</a></li></ul></li></ul></nav>');
 }
 /*
-<!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>-->
-<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Contact Us</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>
-document.write('<nav><ul><li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li><li onClick="window.open(\'gallery.html\',\'_self\');"><a>Gallery</a></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
-
-
-<nav>
-	<ul>
-		<li onClick="window.open(\'index.html\',\'_self\');"><a>Home</a></li>
-		
-		<li onClick="window.open(\'aboutus.html\',\'_self\');"><a>About Us</a></li>
-			<ul>
-				<li onClick="window.open(\'index.html\',\'_self\');"><a>Contact Us</a></li>
-				<li onClick="window.open(\'members.html\',\'_self\');"><a>Members</a></li>
-			</ul>
-		
-		
-		<li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li>
-		<li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li>
-		<li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li>
-	</ul>
-</nav>
-    document.write('<nav><ul><li><a onClick="window.open(\'index.html\',\'_self\');">Home</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="index.html#">Contact Us</a></li><li><a href="members.html">Members</a></li></ul></li><li onClick="window.open(\'scouting.html\',\'_self\');"><a>Scouting Information</a></li><li onClick="window.open(\'news.html\',\'_self\');"><a>News</a></li><li onClick="window.open(\'https://goo.gl/forms/JZXSzxnIJWvKSqR23\',\'_blank\');"><a>Join</a></li></ul></nav>');
-
 */
-
-
-
-
-
-
-
-
-
-
-
-
 
 function foot(date) {
   var footer = document.getElementById('Footer');
