@@ -97,7 +97,7 @@ nav ul li ul li {
 nav ul li ul li a{
   display: block; 
   position: relative;
-  padding: 2% 2%;
+  padding: 1% 2%;
   background-color:#ae5e5e;
   transition: 0.5s;
   text-decoration: none;

@@ -1,5 +1,5 @@
 function nav() {
-    document.write('<nav><ul><li><a href="index.html">Home</a></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li><li ><a href="sponsors.html">Sponsors</a></li><li ><a href="first.html">FIRST</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="awards.html">Awards</a></li><li><a href="contactus.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="members.html">Members</a></li></ul></li></ul></nav>');
+    document.write('<nav><ul><li><a href="index.html">Home</a></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li ><a href="sponsors.html">Sponsors</a></li><li ><a href="first.html">FIRST</a></li><li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="awards.html">Awards</a></li><li><a href="contactus.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="members.html">Members</a></li></ul></li></ul></nav>');
 }
 /*
 <!--<li onClick="window.open(\'forum.html\',\'_self\');"><a>Forum</a></li>-->
