@@ -1,17 +1,19 @@
 "use strict";
 //gallery(Directory, width of page, total number of pictures in directory index from 0, extension as .jpg or .png)
 function modal() {
-    document.write('<section id="modal" onclick="closeModal()">');
+    document.write('<section id="modal" >');
     document.write('<section id="modal-container">');
     document.write('<img src=""alt="" id="image">');
+    document.write('<a id="modal-inc" onclick="incModal()">></a>');
+    document.write('<a id="modal-dec" onclick="decModal()"><</a>');
     document.write('<a id="modal-close" onclick="closeModal()">&times</a>');
     document.write('<p id="modal-caption"></p>');
     document.write('</section>');
     document.write('</section>');
 }
 
-function gallery(dir, max, ext, cap) {
-
+function gallery(dir, imax, ext, cap) {
+//imax - Internal Maximum
     document.write('<gallery>');
     //Declare path and file variables. Path stores the file path, and File stores the path and the file name and extension.
     var path;
@@ -22,14 +24,14 @@ function gallery(dir, max, ext, cap) {
     //Declare and set index to 0.
     var i = 0;
     //for loop from 0 to total number of files in the folder, adding 1 to index each time it's run.
-    for (i = 0; i <= max; i++) {
+    for (i = 0; i <= imax; i++) {
         //Combine path info into file variable.
         var file = (path + i + ext);
         var capt = cap[i];
         var start = ('openModal(\"' + file + '\",\"' + capt + '\")');
         var imgplace = ('<img src="' + file + '" alt="' + capt + '">');
         var capplace = ('<p class="cap">' + capt + '</p>');
-        document.write('<section class=\"sect\" onclick=\"openModal(\'' + file + '\',\'' + capt.replace("'", "\\&apos;") + '\')\">');
+        document.write('<section class=\"sect\" onclick=\"openModal(\'' + file + '\',\'' + capt.replace("'", "\\&apos;") + '\',\'' + imax +'\')\">');
         document.write(imgplace);
         document.write(capplace);
         document.write("</section>");
@@ -38,18 +40,70 @@ function gallery(dir, max, ext, cap) {
     document.write("<br />");
 }
 
-function openModal(path, caption) {
-    var fpath = path.replace("/min","")
+function openModal(path, caption, imax) {
+    var fpath = path.replace("/min","");
     var elem = document.getElementById("modal");
     elem.style.display = "block";
-    var img = document.getElementById("image");
     document.getElementById("image").src = fpath;
     document.getElementById("image").alt = caption;
     document.getElementById("modal-caption").innerHTML = caption;
+    document.getElementById("modal-inc").setAttribute( "onClick", "javascript: incModal("+imax+");" );
     var body = document.getElementsByClassName("team");
     body.style[1] = "height:100%; overflow:auto; scroll:no;"
 }
+function incModal(imax) {
+    var path = document.getElementById("image").src;
+    var epath = path.replace(".jpg","");
+    var fpath = Number(epath.substr(epath.length - 1));
+    
+    console.log(fpath+' fpath');
+    
+    console.log(imax+' imax');
+    
+    if(fpath==imax-1){
+      var match = fpath
+      }
+    else{
+    var match = fpath+1;
+    }
+    
+    
+    console.log(match+' match');
+    var gpath = epath.replace(/.$/,String(match))+".jpg";
+    console.log(gpath);
+    
+    var caption = document.getElementById("image").alt;
+    var doc = document.getElementById("modal-caption").innerHTML = caption;
+    document.getElementById("image").src = gpath;
+    
+  
+  
+}
+
+function decModal() {
+    var path = document.getElementById("image").src;
+    var epath = path.replace(".jpg","");
+    var fpath = epath.substr(epath.length - 1);
+    console.log(fpath);
+    var match = 0;
+    
+    if(fpath=='0'){}
+    else{
+    match = Number(fpath)-1;
+    };
+    console.log(match);
+    var gpath = epath.replace(/.$/,String(match))+".jpg";
+    console.log(gpath);
+    
+    var caption = document.getElementById("image").alt;
+    var doc = document.getElementById("modal-caption").innerHTML = caption;
+    document.getElementById("image").src = gpath;
+    
+  
+  
+}
 function closeModal() {
+  
     var elem = document.getElementById("modal");
     elem.style.display = "none";
     var body = document.body;
