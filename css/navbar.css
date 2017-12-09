@@ -86,12 +86,13 @@ nav ul li:hover ul {
   z-index:100;
   background-color:rgba(0,0,0,0);
   transition: 0.5s;
-  width:50%;
+  width:60%;
   height:50%;
   transition: 0.5s;
 }
 
 nav ul li ul li {
+  font: normal 16px Helvetica;
   display:inline;
   position:relative;
   transition: 0.5s;
@@ -100,7 +101,7 @@ nav ul li ul li a{
   display: inline; 
   position: relative;
   text-align:center;
-  padding:5% 10%;
+  padding:2% 3%;
   background-color:#ae5e5e;
   transition: 0.5s;
 }
