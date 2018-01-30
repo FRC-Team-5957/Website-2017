@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<!--href="indexl.html"-->
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</span></a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</span></a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+<script>
+
+</script>
+
+
+
+<div id="Body" class="team">
+
+<p class="p">
+Team 10570 is Heritage High School's 2016-17 school year FTC team. This season the team is competing in the Velocity Vortex competition.  The goal this season is to pick up particles (whiffle ball size) and shoot them into the corner vortex and center vortex. The robot is designed by the team, modeled on Autodesk Inventor, and built by the students. Our robot won the Rockwell Collins Innovate award and then got the second place nomination in the Connect Award. At the December 3, 2016 competition, our team got selected in an alliance and made it to the semi-finals.
+</p><br />
+
+<p class="p">
+C5CC has the Captains, Ashlee, Aaron, and Marissa. The team is split up into the subteams: Build, Design, Programming, and Scouting.
+</p><br />
+
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+
+<p class="p">
+Team 5957 is Heritage High School's 2017 FRC team, the Cat 5 Cybercanes! Known for the infamous FlagBot, this season the team is competing in the 2017 FIRST event, Steamworks. The name of the robot for the 2017 Steamworks Challenge is Okeechobee, or Ziptie Bot 2.0.
+</p><br />
+<p class="p">Events the C5CC will attend on The Blue Alliance:</p>
+<li class="btn" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/event/2017vapor','_blank');"><a class="comp1"></a></li>
+<li class="btn" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/event/2017vagle','_blank');"><a class="comp2"></a></li>
+<li class="btn" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/event/2017chcmp','_blank');"><a class="regional"></a></li>
+<li class="btn" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/events/2017#first-championship-st-louis','_blank');"><a class="world"></a></li>
+</div>
+<div id="Years">
+
+<ul>
+<li class="btn tooltip2" data-title="Go to the 2015-2016 version of the website." onClick="location.href='../1516/index.html';"><a>2015-2016</a></li>
+<li class="btnd tooltip2" data-title="Go to the 2016-2017 version of the website."><a>2016-2017</a></li>
+<li class="btn tooltip2" data-title="Go to the 2017-2018 version of the website." onClick="location.href='../../index.html';"><a>2017-2018</a></li>
+<!--
+<li class="btn"><a class="tooltip2" data-title="Go to the 2017-2018 version of the website." href="archive/1617/index.html"><span title=" ">2017-2018</a></li>
+<li class="btn"><a class="tooltip2" title="Go to the 2018-2019 version of the website." href="archive/1819/index.html"><span title=" ">2018-2019</a></li>
+<li class="btn"><a class="tooltip2" title="Go to the 2019-2020 version of the website." href="archive/1920/index.html"><span title=" ">2019-2020</a></li>
+<li class="btn"><a class="tooltip2" title="Go to the 2020-2021 version of the website." href="archive/2021/index.html"><span title=" ">2020-2021</a></li>
+-->
+</ul>
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	var page = "Home";
+	onLoad();
+
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer"><script>var oLastModif = new Date(document.lastModified);foot(oLastModif);</script></div>
+
+</div>
+</footer>
+</html>
+
+

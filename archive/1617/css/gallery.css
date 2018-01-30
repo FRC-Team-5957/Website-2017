@@ -1,0 +1,157 @@
+/*
+Set image style for gallery
+These styles aren't used on any placed elements, only generated ones. Don't use these for anything else.
+*/
+gallery section img {
+	z-index:50;
+	position:static;
+}
+gallery section {border-color:#ccc;}
+gallery section:hover {
+	border-color:#fff;
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	margin: 1%;
+	display:block;
+	color: LightGray;
+	position:static;
+	float:left;
+	width:100%;
+	
+}
+#modal {
+	display:none;
+	position:fixed;
+	background-color:rgba(0,0,0,0.7);
+	z-index:100;
+	padding:2% 10%;
+	overflow: auto;
+	height:100%;
+	
+}
+#modal-container {
+	position:relative;
+	width:90%;
+	border-color:#2E2E2E;
+	border-width:0.5em;
+	border-style:solid;
+	overflow: auto;
+	padding:0;
+	margin:0;
+}
+#image{
+	position:relative;
+	width:100%;
+	overflow: auto;
+}
+#modal-caption {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:100;
+	padding:1%;
+	transition: 0.5s;
+	display:block;
+	color:rgba(255,255,255,1);
+	background-color:rgba(100,100,100,0.7);
+	font-size:16px;
+	cursor:default;
+	overflow: auto;
+}
+#modal-close {
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:50px;
+	color:rgba(150,150,150,0.9);
+	background-color:rgba(0,0,0,0);
+	text-shadow:0;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+}
+#modal-close:hover {
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:50px;
+	color:rgba(250,250,250,1);
+	background-color:rgba(0,0,0,0);
+	text-shadow:2px;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+}
+#modal-open {
+	overflow:hidden;
+}
+#modal-inc {
+	position:absolute;
+  text-shadow: 0 0 10px #fff;
+  top:50%;
+	right:0;
+	font-size:100px;
+	color:rgba(150,150,150,0.9);
+	background-color:rgba(0,0,0,0);
+	text-shadow:0;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+  
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#modal-inc:hover {
+	position:absolute;
+  text-shadow: 0 0 10px #000;
+  top:50%;
+	right:0;
+	font-size:100px;
+	color:rgba(250,250,250,1);
+	background-color:rgba(0,0,0,0);
+	text-shadow:2px;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+}
+#modal-dec {
+	position:absolute;
+  text-shadow: 0 0 10px #fff;
+  top:50%;
+	left:0;
+	font-size:100px;
+	color:rgba(150,150,150,0.9);
+	background-color:rgba(0,0,0,0);
+	text-shadow:0;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+  
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#modal-dec:hover {
+	position:absolute;
+  text-shadow: 0 0 10px #000;
+  top:50%;
+	left:0;
+	font-size:100px;
+	color:rgba(250,250,250,1);
+	background-color:rgba(0,0,0,0);
+	text-shadow:2px;
+	transition:0.5s;
+	cursor:pointer;
+	text-align:center;
+}
+#

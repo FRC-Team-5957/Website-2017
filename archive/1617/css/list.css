@@ -1,0 +1,53 @@
+/* If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ */
+/*Main header*/
+
+list ul {
+	margin: 0px 0px 0px 20px;
+	list-style: none;
+	line-height: 2em;
+	font-family: Arial;
+}
+
+list ul li {
+	font-size: 16px;
+	position: relative;
+}
+
+list ul li:before {
+	position: absolute;
+	left: -15px;
+	top: -3px;
+	content: '';
+	display: block;
+	border-left: 1px solid #ddd;
+	height: 1em;
+	border-bottom: 1px solid #ddd;
+	width: 10px;
+}
+
+list ul li:after {
+	position: absolute;
+	left: -15px;
+	bottom: -7px;
+	content: '';
+	display: block;
+	border-left: 1px solid #ddd;
+	height: 100%;
+}
+
+list ul li.root {
+	margin: 0px 0px 0px -20px;
+}
+
+list ul li.root:before {
+	display: none;
+}
+
+list ul li.root:after {
+	display: none;
+}
+
+list ul li:last-child:after {
+	display: none;
+}

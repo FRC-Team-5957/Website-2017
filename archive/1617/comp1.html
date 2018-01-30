@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<link rel="stylesheet" href="css/gallery.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>var page = "Competition 1";</script>
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+<script src="gallery.js"></script>
+</head>
+<body>
+<script>modal()</script>
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</span></a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</span></a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+<li class="btn" onClick="location.href='gallery.html';"><a>Back</a></li>
+<p class="h1">
+Competition 1: District, Highschool</p><br />
+<p class="p">
+This year, we named our robot "Ash", after Ashlee and Ash Ketchum, as we had a particle that was taped up to look like a pokeball.
+</p><br />
+<script>
+var captions = [
+"Starting one of the matches.",
+"Setting Ash up to start a match.",
+"Announcer announcing the match.",
+"Ashlee, Ben, and Mason.",
+"Almost made it.",
+"Jalen, Ben, and Ashlee at the field.",
+"Silly Group picture before going to the judging room.",
+"We won the Rockwell Collins Innovation Award!",
+"Group picture after reciving the Rockwell Collins Innovation Award.",
+"Team at judging room.",
+"Normal group picture.",
+"Calm before the storm.",
+"Ben programming.",
+"The Pit between matches."]
+
+var max = 13
+var ext = ".jpg"
+gallery("ftc/comp1",max,ext,captions)
+</script>
+
+
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+<li class="btn" onClick="location.href='gallery.html';"><a>Back</a></li>
+
+<p class="h1 comp1"></p><br />
+<li class="btn tooltip2 tbal" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/event/2017vapor','_blank');"><a class="comp1"></a></li>
+<p class="p">Although we didn't win, we still had a productive weekend. We worked out several kinks and problems in the robot, and ended up partially changing our design.</p>
+<script>
+var captions = [
+"",
+"",
+"",
+"Kenneth and Kevyn talking to a mentor from Skrappy.",
+"Okeechobee Jr., a cardboard robot.",
+"",
+"Andre and Ben taking Okeechobee to the field before a match."
+];
+
+var max = 6
+var ext = ".jpg"
+gallery("frc/comp1",max,ext,captions)
+</script>
+
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer"><script>var oLastModif = new Date(document.lastModified);foot(oLastModif);</script></div>
+
+</div>
+</footer>
+</html>

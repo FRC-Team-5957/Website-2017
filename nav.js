@@ -1,7 +1,7 @@
 function nav() {
-    document.write('<nav><ul><li><a href="index.html">Home</a></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li ><a href="sponsors.html">Sponsors</a></li><li ><a href="first.html">FIRST</a></li><li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="awards.html">Awards</a></li><li><a href="contactus.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="members.html">Members</a></li></ul></li></ul></nav>');
+    document.write('<nav><ul><li><a href="index.html">Home</a></li><li><a href="scouting.html">Scouting Information</a></li><li ><a href="news.html">News</a></li><li ><a href="sponsors.html">Sponsors</a></li><li ><a href="first.html">FIRST</a></li><li><a href="aboutus.html">About Us</a><ul><li><a href="awards.html">Awards</a></li><li><a href="contactus.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="members.html">Members</a></li></ul></li></ul></nav>');
 }
-/*
+/*<li><a href="https://goo.gl/forms/JZXSzxnIJWvKSqR23\" target="_blank">Join</a></li>
 */
 
 function foot(date) {
@@ -27,24 +27,24 @@ var tbal = document.getElementsByClassName("tbal");
 
 
 for (i=0; i<comp1.length; i++){
-comp1[i].innerHTML = "CHS District - Hampton Roads Event 2017";
+comp1[i].innerHTML = "CHS District - Hampton Roads Event 2018";
 }
 for (i=0; i<comp1T.length; i++){
-comp1T[i].dataset.title = 'CHS District - Hampton Roads Event 2017';
+comp1T[i].dataset.title = 'CHS District - Hampton Roads Event 2018';
 }
 
 for (i=0; i<comp2.length; i++){
-comp2[i].innerHTML = "CHS District - Central Virginia Event 2017";
+comp2[i].innerHTML = "CHS District - Central Virginia Event 2018";
 }
 for (i=0; i<comp2T.length; i++){
-comp2T[i].dataset.title = 'CHS District - Central Virginia Event 2017';
+comp2T[i].dataset.title = 'CHS District - Central Virginia Event 2018';
 }
 
 for (i=0; i<regional.length; i++){
-regional[i].innerHTML = "FIRST Chesapeake District Championship 2017";
+regional[i].innerHTML = "FIRST Chesapeake District Championship 2018";
 }
 for (i=0; i<regionalT.length; i++){
-regionalT[i].dataset.title = 'FIRST Chesapeake District Championship 2017';
+regionalT[i].dataset.title = 'FIRST Chesapeake District Championship 2018';
 }
 
 for (i=0; i<world.length; i++){

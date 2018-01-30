@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<link rel="stylesheet" href="css/gallery.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>var page = "Competition 2";</script>
+<script src="respond.min.js"></script>
+<!-- <script src="valve.js"></script> -->
+<script src="nav.js"></script>
+<script src="gallery.js"></script>
+</head>
+<body>
+<script>modal()</script>
+<div class="gridContainer clearfix">
+<li class="off" id="left"><a id="lefta" class="off"><span title=" ">FTC</span></a></li>
+<li class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</span></a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+<li class="btn" onClick="location.href='gallery.html';"><a>Back</a></li>
+
+<p class="h1 comp2"></p><br />
+<li class="btn tooltip2 tbal" style="display:list-item;" onClick="window.open('https://www.thebluealliance.com/event/2017vapor','_blank');"><a class="comp1"></a></li>
+<p class="p"></p>
+<script>
+var captions = [
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""];
+
+var max = 0
+var ext = ".jpg"
+gallery("frc/comp3",width,max,ext,captions)
+</script>
+
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer"><script>var oLastModif = new Date(document.lastModified);foot(oLastModif);</script></div>
+
+</div>
+</footer>
+</html>

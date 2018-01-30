@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC - Forum</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Button in top left styling
+leftsmokebox.css is for when on an FTC Page.
+rightsmokebox.css is for when on an FRC Page.
+smokebox.css is for nuetral pages.
+-->
+<link rel="stylesheet" href="css/smokebox.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<!--<section class="flat">
+    <button>Button</button>
+    <button class="hover">:hover</button>
+    <button class="active">:active</button>
+</section>-->
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="off" id="left"><a id="lefta" class="on"><span title=" ">FTC</a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</a></li>
+<script>nav()</script>
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+
+<div id="Body"><p id="t1" style="text-indent:30px;">This is the front end forum page. Here you can see some recent news about the forum, or visit the forum proper.</p><br />
+  <li class="btn" style="margin-left:2%;"><a href="forum/index.php">Forum</a></li>
+<p id="t1" style="margin-left:2%; padding:2%;">As of Monday, Feburary 10, the server host was <a  title="Distributed Denial Of Service" class="tooltip1"><span title=" ">DDOS</a>'d, again. If this becomes too frequent, we might have to look at a different host.<br>As of Friday, Feburary 5, the server host was attacked by a <a  title="Distributed Denial Of Service" class="tooltip1"><span title=" ">DDOS</a> attempt, and was down for a short period of time. Then, a few hours later everything came back up. All is fine now.
+As of Wednesday, January 20, 2016, Registration is closed.<br>As of Monday, January 18, 2016 1:06 PM, the forum is up and running. <br>As of Monday, January 18, 2016 11:14 AM, the forum is down.<br> As of Monday, January 18, 2016 7:52 AM, the forum is up and running.<br>Registration will be closed on Wednesday, January 20, 2016 8:00 PM</p></div>
+</div>
+<script>
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer">Page last updated on: <!-- #BeginDate format:fcAm1a -->Sunday, March 27, 2016 12:46 PM<!-- #EndDate --> <br />&copy; 2015-2016 Aaron Greco</div>
+</div>
+</footer>
+</html>

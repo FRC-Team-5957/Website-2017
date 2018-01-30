@@ -1,0 +1,273 @@
+/* If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ */
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	background: #a1a1a1;
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	background-color: #a1a1a1;
+	transition: 0.5s;
+}
+nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+}
+
+#Banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-bottom:1%;
+	width: 100%;
+	display: block;
+}
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-bottom:5%;
+	width: 100%;
+	display: block;
+	background-color:#a1a1a1;
+	color:#444;
+}
+#Body {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+#Body2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+#Years {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+.cap {
+	position:absolute;
+	float:top;
+	left:0;
+	top:0;
+	z-index:100;
+	padding:2%;
+	transition: 0.5s;
+	display:block;
+	color:rgba(255,255,255,0);
+	background-color:rgba(100,100,100,0);
+	font-size:14px;
+}
+.cap:hover {
+	transition: 0.5s;
+	color:rgba(255,255,255,1);
+	background-color:rgba(100,100,100,0.7);
+}
+.sect{
+    width:45%;
+	border-style:solid;
+	border-color:#000;
+	border-width:0.35em;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition: 0.5s;
+	z-index:10;
+}
+.sect:hover{
+	border-color:#ccc;
+	transition: 0.5s;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	transition: 0.5s;
+}
+nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+}
+#Banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Body {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+#Body2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+#Years {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+.sect{
+    width:46%;
+	border-style:solid;
+	border-color:#000;
+	border-width:0.35em;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition: 0.5s;
+	z-index:10;
+}
+.sect:hover{
+	border-color:#ccc;
+	transition: 0.5s;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1000px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	background-color:#571c30;
+	transition: 0.5s;
+}
+#Banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	font-weight: bold;
+}
+#Body {
+	color: Black;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom-width: 5px;
+	border-bottom-color: White;
+	background-color: #a1a1a1;
+}
+#Body2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+#Years {
+	color: Black;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #a1a1a1;
+}
+.sect{
+    width:30%;
+	border-style:solid;
+	border-color:#000;
+	border-width:0.35em;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition: 0.5s;
+	z-index:10;
+}
+.sect:hover{
+	border-color:#ccc;
+	transition: 0.5s;
+}
+}

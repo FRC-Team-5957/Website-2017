@@ -1,0 +1,276 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<link rel="stylesheet" href="css/list.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</span></a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</span></a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+<p class="h1">FTC Members Page</p><p class="h3"> This includes all who continued to participate through the season.</p><br />
+<list>
+<ul>
+		<li class="root" class="h2">Captains
+		<ul>
+			<li class="t2">Ashlee T. - Team Captain</li>
+			<li class="t2">Marissa H. - Team Captain</li>
+			<li class="t2">Aaron G. - Team Captain</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Teams
+		<ul>
+			<li class="h3">Mechanical/Electrical
+			<ul>
+				<li class="t2">Jordan S. - Mechanical Lead
+				<ul>
+					<li class="t2">Aaron G. - Mechanical Co-Lead</li>
+					<li class="t1">Adam</li>
+					<li class="t1">Ashlee</li>
+					<li class="t1">Charles</li>
+					<li class="t1">David</li>
+					<li class="t1">Fidel</li>
+					<li class="t1">Holden</li>
+					<li class="t1">Kelvin</li>
+					<li class="t1">Kenneth</li>
+					<li class="t1">Marissa</li>
+					<li class="t1">Melissa</li>
+					<li class="t1">Michael</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Design
+			<ul>
+				<li class="t2">Adam
+				<ul>
+					<li class="t1">Darius</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Programming
+			<ul>
+				<li class="t2">Ben - Tele-Op</li>
+				<li class="t2">Jakob B. - Autonomous
+				<ul>
+					<li class="t1">Domenek</li>
+					<li class="t1">Jalen</li>
+					<li class="t1">Mason</li>
+					<li class="t1">Phaith</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Scouting
+			<ul>
+				<li class="t2">Kenneth
+				<ul>
+					<li class="t1">David</li>
+					<li class="t1">Kevyn</li>
+					<li class="t1">Melissa</li>
+					<li class="t1">Tap</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			<li class="h3">Marketing/Social Media
+			<ul>
+				<li class="t1">Ms. Stein - Social Media</li>
+				<li class="t1">Marisssa - Fundraising</li>
+				<li class="t1">Aaron - Website</li>
+			</ul>
+			</li>
+			<li class="h3">Drive Team
+			<ul>
+				<li class="t1">Ashlee</li>
+				<li class="t1">Ben</li>
+				<li class="t1">Marissa</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+</list>
+
+  
+
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+<p class="h1">FRC Members Page</p><p class="h3"> This includes all who continued to participate through the season.</p><br />
+<list>
+<ul>
+		<li class="root" class="h2">Captains
+		<ul>
+			<li class="t2">Ashlee T. - Team Captain</li>
+			<li class="t2">Marissa H. - Team Co-Captain</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Officers
+		<ul>
+			<li class="t2">Jordan S. - Chief Operations Officer</li>
+			<li class="t2">Kenneth J. - Chief Financial Officer</li>
+			<li class="t2">Domenek D. - Communications Officer</li>
+			<li class="t2">Adam H. - Environmental Health and Safety Officer</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Under Chief Operations Officer
+		<ul>
+			<li class="h3">Mechanical
+			<ul>
+				<li class="t2">Caroline M. - Mechanical Lead
+				<ul>
+					<li class="t1">Charles B.</li>
+					<li class="t1">Jacob S.</li>
+					<li class="t1">Michael P.</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Electrical
+			<ul>
+				<li class="t2">Aaron G. - Electrical Lead/Pit Boss
+				<ul>
+					<li class="t1">Brendan T.</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Programming
+			<ul>
+				<li class="t2">Jakob B. - Programming Lead
+				<ul>
+					<li class="t1">Ben M.</li>
+					<li class="t1">Austen G.</li>
+					<li class="t1">Corin W.</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+			<li class="h3">Drive Team/Rules/Strategy
+			<ul>
+				<li class="t2">Kelvin B. - Drive Team/Rules/Strategy Lead
+				<ul>
+					<li class="t1">Fidel R.</li>
+					<li class="t1">Kevyn R.</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Under Chief Financial Officer
+		<ul>
+			<li class="t2">Kenneth J. - Chief Financial Officer
+			<ul>
+			<li class="t2">Sora S. - Treasurer</li>
+			<li class="t2">Tristan P. - Fundraising</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Under Communications Officer
+		<ul>
+			<li class="t2">Domenek D. - Communications Officer</li>
+			<li class="t1">Jalen W. -Communications and Publicity</li>
+			<li class="t1">Tristan P. - Fundraising</li>
+			<li class="t1">Melissa M. - Image and Spirit</li>
+			<li class="t1">David D. - Social Media</li>
+			<li class="t1">David I. - Lead Scribe/Awards</li>
+			
+			
+		</ul>
+		</li>
+		<li class="root" class="h2">Safety
+		<ul>
+			<li class="t2">Adam H. - Saftey</li>
+		</ul>
+		</li>
+		
+		<li class="root" class="h2">Mentors
+		<ul>
+			<li class="t2">Mrs. O. Stein</li>
+			<li class="t2">Mr. R. Burgos</li>
+			<li class="t1">Mr. M. Greco</li>
+			<li class="t1">Mr. J. Bishop</li>
+			<li class="t1">Mr. Andrei S.</li>
+			<li class="t1">Mr. Jim G.</li>
+			
+		</ul>
+		</li>
+		
+	</ul>
+</list>
+
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+	var page = "Members";
+	onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer"><script>var oLastModif = new Date(document.lastModified);foot(oLastModif);</script></div>
+
+</div>
+</footer>
+</html>

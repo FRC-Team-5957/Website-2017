@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- If you are reading this, piss off unless you're someone who is on the webdev team of the C5CC.
+Otherwise, you should be here: http://cat5cybercanes.org/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C5CC</title>
+<!--Favicon-->
+<link rel="icon" type="img/ico" href="favicon.ico">
+<!--Base stuff-->
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Sizing and layout for page-->
+<link href="css/piston.css" rel="stylesheet" type="text/css">
+<!--Nav bar styling-->
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<!--Text styling-->
+<link rel="stylesheet" href="css/styles.css">
+<!--Buttons (Not navbar)-->
+<link rel="stylesheet" href="css/smokebox.css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* clear the link below to the html5shiv
+* done the "no-js" class to the html tags at the top
+* you can also clear the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="valve.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<li onclick="toFTC()" class="on" id="left"><a id="lefta" class="on"><span title=" ">FTC</span></a></li>
+<li onclick="toFRC()" class="off" id="right"><a id="righta" class="off"><span title=" ">FRC</span></a></li>
+<script>nav()</script>
+
+<!--Banner-->
+<div id="Banner"><img src="images/bannerG.png" alt="Banner"></div>
+
+<!--FTC side div-->
+<div id="Body" class="team">
+
+<p class="t1" style="">
+Body paragraph 1
+</p><br />
+
+<p class="t1" style="">
+Body paragraph 2
+</p><br />
+
+</div>
+
+<!--FRC side div-->
+<div id="Body2" class="team">
+
+<p class="h1">
+Scouting Information
+</p><br />
+
+<p class="t1">
+Name:<br>
+Okeechobee<br>
+<br />
+Autonomous:<br>
+<i class="material-icons md-light">done</i> Cross Line <br>
+<i class="material-icons md-light">done</i> Place Gear <br>
+<br />
+
+Tele-Op:<br>
+<i class="material-icons md-light">done</i> Deliver Gears <br>
+<i class="material-icons md-light">clear</i> Score Low Goal <br>
+<i class="material-icons md-light">clear</i> Score High Goal <br>
+<br />
+
+End Game:<br>
+<i class="material-icons md-light">done</i> Climb Rope<br>
+
+<br />
+<b>Other Notes/Information:</b><br>
+Weight: 91.1lbs <br>
+Gear mechanism is active, and can drop gears if needed.<br>
+Once on the rope, the robot can climb in 11 seconds or less.<br>
+</p><br />
+</div>
+</div>
+<!--This script stays here. Function is self explanatory.-->
+<script>
+//Set the name of the page here. For example, this is the base page, so the name is "Base".
+    var page = "Scouting Information";
+    onLoad()
+</script>
+</body>
+<footer>
+<div class="gridContainer clearfix">
+<div id="Footer"><script>var oLastModif = new Date(document.lastModified);foot(oLastModif);</script></div>
+
+</div>
+</footer>
+</html>
