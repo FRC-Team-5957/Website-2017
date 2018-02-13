@@ -53,24 +53,35 @@ function openModal(path, caption, imax) {
 }
 function incModal(imax) {
     var path = document.getElementById("image").src;
-    var epath = path.replace(".jpg","");
-    var fpath = Number(epath.substr(epath.length - 1));
-    console.log(epath+' epath');
-    console.log(fpath+' fpath');
+    console.log(imax+' imax.');
+    console.log(path+' Image Path');
     
-    console.log(imax+' imax');
     
-    if(fpath==(imax-1)){
-      var match = fpath
+    var newpath = path.split("/");
+    
+    var length = newpath.length-1;
+    
+    //image index string
+    var imIS = newpath[length].split(".")
+    
+    console.log(newpath[length]+' Last element of newpath array.');
+    console.log(imIS[0]+' Image Index before increment');
+
+    if(imIS[0]==(imax-1)){
+      var match = imIS[0]
       }
     else{
-    var match = fpath+1;
+    var match = Number(imIS[0])+1;
     }
     
     
     console.log(match+' match');
-    var gpath = epath.replace(/.$/,String(match))+".jpg";
-    console.log(gpath);
+    // "/.$/" Replaces last character of string with specified string.
+    //var gpath = epath.replace(/.$/,String(match))+".jpg";
+    imIS[0] = match;
+    newpath[length]=imIS.join(".")
+    var gpath = newpath.join("/")
+    console.log(gpath+' Final Path');
     
     var caption = document.getElementById("image").alt;
     var doc = document.getElementById("modal-caption").innerHTML = caption;
@@ -82,18 +93,34 @@ function incModal(imax) {
 
 function decModal() {
     var path = document.getElementById("image").src;
-    var epath = path.replace(".jpg","");
-    var fpath = epath.substr(epath.length - 1);
-    console.log(fpath);
-    var match = 0;
+    console.log(path+' Image Path');
     
-    if(fpath=='0'){}
+    
+    var newpath = path.split("/");
+    
+    var length = newpath.length-1;
+    
+    //image index string
+    var imIS = newpath[length].split(".")
+    
+    console.log(newpath[length]+' Last element of newpath array.');
+    console.log(imIS[0]+' Image Index before decrement');
+
+    if(imIS[0]==(0)){
+      var match = imIS[0]
+      }
     else{
-    match = Number(fpath)-1;
-    };
-    console.log(match);
-    var gpath = epath.replace(/.$/,String(match))+".jpg";
-    console.log(gpath);
+    var match = Number(imIS[0])-1;
+    }
+    
+    
+    console.log(match+' match');
+    // "/.$/" Replaces last character of string with specified string.
+    //var gpath = epath.replace(/.$/,String(match))+".jpg";
+    imIS[0] = match;
+    newpath[length]=imIS.join(".")
+    var gpath = newpath.join("/")
+    console.log(gpath+' Final Path');
     
     var caption = document.getElementById("image").alt;
     var doc = document.getElementById("modal-caption").innerHTML = caption;
