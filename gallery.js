@@ -55,12 +55,12 @@ function incModal(imax) {
     var path = document.getElementById("image").src;
     var epath = path.replace(".jpg","");
     var fpath = Number(epath.substr(epath.length - 1));
-    
+    console.log(epath+' epath');
     console.log(fpath+' fpath');
     
     console.log(imax+' imax');
     
-    if(fpath==imax-1){
+    if(fpath==(imax-1)){
       var match = fpath
       }
     else{
