@@ -84,6 +84,7 @@ function incModal(imax) {
     console.log(gpath+' Final Path');
     
     var caption = document.getElementById("image").alt;
+    console.log(caption);
     var doc = document.getElementById("modal-caption").innerHTML = caption;
     document.getElementById("image").src = gpath;
     
